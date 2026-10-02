@@ -1,22 +1,20 @@
 # Overview/Welcome {.unnumbered}
 
 This is a Quarto Book that holds most of the materials and links related to
-Eric C. Anderson's presentations at ConGen 2024.
+Eric C. Anderson's presentations at ConGen 2026.
 
-This year Eric is giving two different presentations with hands-on sessions:
+This year Eric is giving a sinble presentation with a hands-on session:
 
 
 1. An introduction to the idea of probability and inference, and what
 that looks like for learning about populations from sequencing-read based 
 data.
-2. A short (1.5 hour) introduction to Snakemake---a flexible and full-featured
-workflow management system tailored to bioinformatic processing.
 
-For these two presentations, there is a narrative description that may be found in the
-pages of this book---each presentation constitutes a different chapter of this web-book.  These
-chapters can be accessed from the contents links to the left of the page.
+Fort this presentation, there is a narrative description that may be found in the
+pages of this book.  This
+chapter can be accessed from the contents links to the left of the page.
 
-There are also slides and hands-on exercise that Eric will be using during the presentations. The slides were
+There are also slides and hands-on exercise that Eric will be using during the presentation. The slides were
 were made using Quarto's `revealjs` format.  
 
 The links to the slides and the hands-on exercises are found below.
@@ -27,10 +25,11 @@ to do the hands-on exercises.
 
 ## Probability, Inference and Genotype Likelihoods
 
-* [LECTURE SLIDES](https://eriqande.github.io/con-gen-2024/slides/prob-slides.html){target="_blank"}
-* The materials for the hands on does _not_ run on the ConGen Rstudio Server.  Rather,
+* [LECTURE SLIDES](https://eriqande.github.io/con-gen-2026/slides/prob-slides.html){target="_blank"}
+* The material for the hands on does _not_ run on the ConGen Rstudio Server.  Rather,
 it must be run locally on your own computer using R and Rstudio.  You should have
-R and Rstudio installed, with the package 'tidyverse' installed.  With that setup
+R and Rstudio installed, with the packages 'tidyverse' and 'cowplot' installed.
+With that setup
 you can get the RStudio project to run the hands on sessions with the following steps:
 ``` r
 if(!("usethis" %in% rownames(installed.packages()))) {
@@ -45,21 +44,6 @@ files, like: `001-allele-freq-estimation.Rmd`.
 - Then Click the "Run Document" button.
 
 
-## Snakemake 
-
-* [LECTURE SLIDES](https://eriqande.github.io/con-gen-2024/slides/snake-slides.html){target="_blank"}
-* To do the hands on, you need to log into your RStudio Server account and use the Terminal
-to change directories into the Snakemake-Example directory that is in your home directory, i.e.:
-```sh
-cd ~/Snakemake-Example
-```
-If you don't have a Snakemake-Example directory in your home directory, then something
-has gone horribly wrong.  If this is the case, try copying that folder from
-the instructor materials, using this:
-```sh
-cd ~
-cp -r instructor_materials/Eric_Anderson/2024/Snakemake-Example ./
-```
 
 
 
@@ -79,6 +63,15 @@ It is not complete, but it has some reasonably informative sections within it.
 (And it's free!)
 
 ### Old Lectures Not Given This Year
+
+
+#### Snakemake 
+
+In 2024, Eric gave a lecture about Snakemake.  The lecture slides from that
+are still available.
+
+* [LECTURE SLIDES](https://eriqande.github.io/con-gen-2026/slides/snake-slides.html){target="_blank"}
+
 
 
 #### The Coalescent 

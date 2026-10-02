@@ -1,9 +1,9 @@
-# con-gen-2024
+# con-gen-2026
 
 This is the repo for the website
-[https://eriqande.github.io/con-gen-2024/](https://eriqande.github.io/con-gen-2024/)
+[https://eriqande.github.io/con-gen-2026/](https://eriqande.github.io/con-gen-2026/)
 that Eric C. Anderson is using for teaching
-materials in 2024 while teaching at the remote/online version of the UMT/Flathead Lake
+materials in 2026 while teaching at the remote/online version of the UMT/Flathead Lake
 Conservation Genomics Workshop.
 
 In order to build the site, from the top level of the directory, you have to run
@@ -18,7 +18,7 @@ quarto render --to html
 
 # render the slides individually and copy them into the docs directory
 mkdir -p docs/slides
-for S in prob-slides snake-slides coal-slides; do  
+for S in prob-slides; do  
   quarto render $S.qmd --to revealjs &&
     cp $S.html docs/slides/$S.html
 done

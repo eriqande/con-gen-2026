@@ -18,7 +18,7 @@ Eric C. Anderson
 :::
 
 ::: {style="margin-left: 260px;"}
-Conservation Genomics Workshop, Monday August 26, 2024
+Conservation Genomics Workshop, Wednesday October 7, 2026
 :::
 
 ## Overview {background-image="quarto-static/slideswoosh-white.png" background-size="contain"}

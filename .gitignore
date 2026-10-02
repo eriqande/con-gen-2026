@@ -7,3 +7,5 @@
 /prob-slides.html
 /snake-slides.html
 /coal-slides.html
+
+**/*.quarto_ipynb

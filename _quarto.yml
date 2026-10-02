@@ -3,13 +3,12 @@ project:
   output-dir: docs
 
 book:
-  title: "Con-Gen-2024"
+  title: "Con-Gen-2026"
   author: "Eric C. Anderson"
-  date: "8/26/2024"
+  date: "10/7/2026"
   chapters:
     - index.qmd
     - probinf.qmd
-    - snakemake.qmd
     - references.qmd
   sidebar: 
     logo: quarto-static/fisheries_header_logo_jul2019.png
