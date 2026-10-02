@@ -167,8 +167,8 @@ window.Quarto = {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
       <a href="./index.html" class="sidebar-logo-link">
-      <img src="./quarto-static/fisheries_header_logo_jul2019.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
-      <img src="./quarto-static/fisheries_header_logo_jul2019.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      <img src="./quarto-static/sespe_circle.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="./quarto-static/sespe_circle.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
       </a>
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Con-Gen-2026</a> 
@@ -546,8 +546,8 @@ P(p_A~|~\boldsymbol{Y}) &amp;\propto {p_A}^{0}(1-p_A)^{0} \times p_A^{73}(1-p_A)
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>pA[<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] 0.3574444 0.4109200 0.3756357 0.3672236 0.3794996 0.3372399 0.3244815
- [8] 0.3533562 0.3369110 0.4568192</code></pre>
+<pre><code> [1] 0.4475987 0.3912186 0.3498900 0.3921641 0.3545248 0.3928094 0.4153871
+ [8] 0.3480594 0.3559310 0.3438568</code></pre>
 </div>
 </div>
 <p>We call this a “vanilla” Monte Carlo sample because every member of the sample was independent—this is not <em>Markov chain</em> Monte Carlo.</p>
@@ -566,21 +566,21 @@ P(p_A~|~\boldsymbol{Y}) &amp;\propto {p_A}^{0}(1-p_A)^{0} \times p_A^{73}(1-p_A)
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(pA)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 0.3662785</code></pre>
+<pre><code>[1] 0.3663127</code></pre>
 </div>
 </div>
 <p>as is the posterior median:</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">median</span>(pA)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 0.3657867</code></pre>
+<pre><code>[1] 0.3658883</code></pre>
 </div>
 </div>
 <p>Or the standard deviation of the posterior distribution:</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sd</span>(pA)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 0.03387496</code></pre>
+<pre><code>[1] 0.033836</code></pre>
 </div>
 </div>
 <p>Or, the 90%-equal-tail Credible Interval</p>
@@ -588,7 +588,7 @@ P(p_A~|~\boldsymbol{Y}) &amp;\propto {p_A}^{0}(1-p_A)^{0} \times p_A^{73}(1-p_A)
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">quantile</span>(pA, <span class="at">probs =</span> <span class="fu">c</span>(<span class="fl">0.05</span>, <span class="fl">0.95</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>       5%       95% 
-0.3113853 0.4227125 </code></pre>
+0.3113853 0.4227722 </code></pre>
 </div>
 </div>
 <p>All of those quantities could have been obtained analytically in this case, but it is a lot simpler to just work with a Monte Carlo sample because the operations are the same with every Monte Carlo sample (which is not necessarily true of every analytical distribution…).</p>
